@@ -6,12 +6,14 @@ namespace DaLettera_aDecimale
     {
         static void Main(string[] args)
         {
-            char lettera;
+            char letter;
             ushort decimale = 0;
-            Console.WriteLine("Inserire la lettera da convertire in ASCII");
-            lettera = Convert.ToChar(Console.ReadLine());
-            decimale = lettera;
-            Console.WriteLine($"La lettera: {lettera} in conversione ASCII è {decimale}");
+            Console.WriteLine("Insert the letter:");
+            letter = Convert.ToChar(Console.ReadLine());
+            decimale = letter;
+            Console.WriteLine($"The letter: {letter} converted to ASCII is {decimale}");
+            string hexadecimal = decimale.ToString("X");
+            Console.WriteLine($"The decimal number converted to hexadecimal is:{hexadecimal}");
 
         }
     }
